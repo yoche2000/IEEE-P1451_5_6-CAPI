@@ -1,8 +1,8 @@
 # IEEE-P1451_5_6-CAPI (TBR)
 ## Introduction
 This project is the Communication API for the IEEE P1451.5.6 Standard.
-The IEEE P1451.5.6 Standard is the Sigfox Branch of the [P1451 Standard][1].
-TIM and NCAP are the main components of the [P1451 family of standards][1].
+The IEEE P1451.5.6 Standard is the [Sigfox](https://www.sigfox.com/en) Branch of the [P1451 Standard][1].
+Transducer Interface Module (TIM) and Network Capable Application Processor (NCAP) are the main components of the [P1451 family of standards][1].
 Under IEEE P1451.5 standard for wireless technologies, the IEEE P1451.5.6 focuses on the technology of Sigfox.
 In a sigfox network, the Wireless TIM (WTIM) is a Sigfox Device and the NCAP is the Sigfox Cloud.
 The communication API enables the verification of P1451.5.6 sttandardized devices on the NCAP side.
