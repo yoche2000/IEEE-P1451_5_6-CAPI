@@ -1,0 +1,10 @@
+Index,F_NAME,DESC,DATATYPE,VALUE
+0,sigfoxmode,,UINT32,1
+1,id,,STR,2AC98BD4
+2,pac,,STR,585CB3B42AC98BD4
+3,encryption,,UINT32,1
+4,rcz,,UINT32,4
+5,downlink,,UINT32,2
+6,powerclass,,UINT32,0
+7,keepalive,,UINT32,0
+8,payloadtype,,UINT32,2
