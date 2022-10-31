@@ -10,7 +10,9 @@ The communication API enables the verification of P1451.5.6 sttandardized device
 The CAPI works on both the NCAP sida and WTIM side. 
 The NCAP works together with the Sigfox Coud. 
 Since there is only one centralized network server for Sigfox, there is only one NCAP CAPI. 
-The structure and code of the NCAP CAPI can be found under [/NCAP][2]
+The structure and code of the NCAP CAPI can be found under [/NCAP][2].
+Since there are different development board supporting Sigfox, there are different API built for different boards. 
+The structure and code of the WTIM CAPI can be found under [/WTIM][4].
 
 ## CAPI Functions
 #### TEDS
@@ -23,8 +25,9 @@ The structure and code of the NCAP CAPI can be found under [/NCAP][2]
 * If the retrieved information matches the indicated TEDS stored im NCAP, the WTIM will be marked as verified; else, the WTIM is unverified.
 #### CAPI for WTI
 * Different Development Board will have its own CAPI, as the codes are different.
-* The device should read the information written in TEDS and perform the specification accordingly.
+* The device should read the information written in TEDS and perform the specification accordingly to achieve plug-and-play
 
 [1]: https://en.wikipedia.org/wiki/IEEE_1451
-[2]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WTIM
+[2]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/NCAP
 [3]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/Example%20TEDS
+[4]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WRIM
