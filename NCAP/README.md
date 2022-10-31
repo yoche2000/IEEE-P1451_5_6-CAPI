@@ -12,13 +12,13 @@ Therefore, a user/password pair is required to successfully use the CAPI.
 ```
 from p1451 import NCAP
 ```
-2. Initiate a NCAP() object using the endpoint (a url), username (login), and pasword to the Sigfox Cloud
+2. Initiate a ```NCAP()``` object using the endpoint (a url provided by sigfox cloud), username (login), and pasword to the Sigfox Cloud
 ```
 ncap = NCAP(ep='https://api.sigfox.com/v2/',
             usr=usr,
             pwd=pwd)
 ```
-3. Use the verify() method under the ncap object to verify a WTIM using its *id*. The parameters passed in should 
+3. Use the ```verify()``` method under the ncap object to verify a WTIM using its ```id```. The parameters passed in should 
 ```
 ncap.verify(id="417E4C", path="sigfox_phy_teds.csv")
 ```
