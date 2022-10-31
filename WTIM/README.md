@@ -4,7 +4,7 @@ This python library is a library for Pycom devices to implement IEEE P1451.5.6 s
 
 1. Generate a P1451 object. The object will be generated using the data in the 2 TEDS files stored in the WTIM.
 ```
-  my1451 = P1451()
+  my1451 = WTIM()
 ```
 2. Use following methods to print the teds of an P1451 opject.
 ```
