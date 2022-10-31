@@ -1,31 +1,24 @@
-# p1451.5.6_pycom_CAPI
+# CAPI and NCAP
+##Introduction
+In the IEEE P1451.5.6 standard, NCAP is the [Sigfox Cloud](https://backend.sigfox.com/), the centralized network server opperated by Sigfox. 
+Since NCAP is unified for the IEEE P1451.5.6 standard, this CAPI can be used to work with any WTIM.
 
-This python library is a library for Pycom devices to implement IEEE P1451.5.6 standardization. It affiliates to the P1451.5.6 working Group for prototyping the standard. The Transducer Electronic Datasheet (TEDS) should be generated in CSV format and stored in WTIM (Pycom), of which the format should be in compliance with the P1451.5.6 standard and the P1451.0 standard.
+##Dependence
+Since the CAPI has to retrieve the information about WTIMS, the CAPI will be utilizing the Sigfox API.
+Therefore, a user/password pair is required to successfully use the CAPI.
 
-1. Generate a P1451 object. The object will be generated using the data in the 2 TEDS files stored in the WTIM.
+##CPI Structure
+1. NCAP is the main class of this API. Import the class NCAP() from p1451.py
 ```
-  my1451 = P1451()
+from p1451 import NCAP
 ```
-2. Use following methods to print the teds of an P1451 opject.
+2. Initiate a NCAP() object using the endpoint (a url), username (login), and pasword to the Sigfox Cloud
 ```
-  >>> my1451.get_phy_teds()     #physical TEDS
-  >>> my1451.get_sen_teds()     #sensor TEDS
+ncap = NCAP(ep='https://api.sigfox.com/v2/',
+            usr=usr,
+            pwd=pwd)
 ```
-3. P1451 objects can be printed, transforming the data structure into a string. Attributes of the object will be printed.
+3. Use the verify() method under the ncap object to verify a WTIM using its *id*. The parameters passed in should 
 ```
-  >>> print(my1451)
-```
-4. Using the connect() method of the class P1451 will connect the Pycom board to Sigfox Cloud in a plug-and-play fashion. The data in to Pysical TEDS has to be valid to successfully connect the pycom Board to the server.
-```
-  my1451.connect()
-```
-5. After connecting TEDS objects, the Sigfox socket will be stored in the "socket" attribute of the object. It can be used to send messages and receive messages.
-
-```
-  ##Example program: Send the message "test" every hour to the Sigfox Cloud.
-
-  while True:
-      payload = b'test'
-      my1451.socket.send(payload)
-      time.sleep(3600)
+ncap.verify(id="417E4C", path="sigfox_phy_teds.csv")
 ```
