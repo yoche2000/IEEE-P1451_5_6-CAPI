@@ -28,9 +28,9 @@ The CAPI enables the verification of P1451.5.6 standardized devices on the NCAP 
 The Communication API (CAPI) works on both the NCAP side and WTIM side. 
 The NCAP side of the CAPI works together with the Sigfox Coud. 
 Since Sigfox Cloud is the only centralized NCAP for Sigfox systens, the NCAP CAPI is universal. 
-The structure and code of the NCAP CAPI can be found under [/NCAP][2].
+The structure and code of the NCAP CAPI are located under [/NCAP][2].
 Since there are different development boards supporting Sigfox, there are different API built for different boards. 
-The structure and code of the WTIM CAPIs can be found under [/WTIM][4].
+The structure and code of the WTIM CAPIs are located under [/WTIM][4].
 
 ![image info](https://i.imgur.com/bOsUcT3.jpg)
 </p>
@@ -39,16 +39,16 @@ Fig.3 - P1451.5.6 TEDS and CAPI Working Flow
 </p>
 
 ## Structure of P1451.5.6 CAPI
-### P1451.5.6 TEDS
+### [P1451.5.6 TEDS][3]
 * A P1451.5.6 Transducer Electronic Data Sheet (TEDS) is a set of specifications for the WTIM
 * PhyTEDS specify the radio configuration of the Sigfox device (WTIM).
 * SenTEDS specify the behavior of the sensors attached to the device (This TEDS is references to P1451.0 and not overarched by the P1451.5.6 standard).
 * The specifications of P1451.5.6 TEDS and examples are located under [here][3]. 
-### P1451.5.6 NCAP CAPI 
+### [P1451.5.6 NCAP CAPI][2] 
 * The CAPI can be run from anywhere with access to the Sigfox Cloud.
 * The NCAP uses the API to retrieve the behavior of a Sigfox device from the Sigfox Cloud. 
 * If the retrieved information matches the indicated TEDS stored im NCAP, the WTIM will be marked as verified; else, the WTIM is unverified.
-### P1451.5.6 WTIM CAPI
+### [P1451.5.6 WTIM CAPI][4]
 * The CAPI should be run on the development board or Sigfox device.
 * Different Development Board will have its own CAPI, as the codes are different.
 * The device should read the information written in PhyTEDS and perform the specification accordingly to achieve plug-and-play.

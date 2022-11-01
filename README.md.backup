@@ -28,9 +28,9 @@ The CAPI enables the verification of P1451.5.6 standardized devices on the NCAP 
 The Communication API (CAPI) works on both the NCAP side and WTIM side. 
 The NCAP side of the CAPI works together with the Sigfox Coud. 
 Since Sigfox Cloud is the only centralized NCAP for Sigfox systens, the NCAP CAPI is universal. 
-The structure and code of the NCAP CAPI can be found under [/NCAP][2].
+The structure and code of the NCAP CAPI are located under [/NCAP][2].
 Since there are different development boards supporting Sigfox, there are different API built for different boards. 
-The structure and code of the WTIM CAPIs can be found under [/WTIM][4].
+The structure and code of the WTIM CAPIs are located under [/WTIM][4].
 
 ![image info](https://i.imgur.com/bOsUcT3.jpg)
 </p>
@@ -39,7 +39,7 @@ Fig.3 - P1451.5.6 TEDS and CAPI Working Flow
 </p>
 
 ## Structure of P1451.5.6 CAPI
-### P1451.5.6 TEDS
+### [P1451.5.6 TEDS][3]
 * A P1451.5.6 Transducer Electronic Data Sheet (TEDS) is a set of specifications for the WTIM
 * PhyTEDS specify the radio configuration of the Sigfox device (WTIM).
 * SenTEDS specify the behavior of the sensors attached to the device (This TEDS is references to P1451.0 and not overarched by the P1451.5.6 standard).
@@ -56,4 +56,4 @@ Fig.3 - P1451.5.6 TEDS and CAPI Working Flow
 [1]: https://en.wikipedia.org/wiki/IEEE_1451
 [2]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/NCAP
 [3]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/Example%20TEDS
-[4]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WRIM
+[4]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WTIM
