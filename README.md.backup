@@ -2,7 +2,7 @@
 ## Introduction
 This project is the Communication API (CAPI) of the [IEEE P1451.5.6 Standard](https://standards.ieee.org/ieee/1451.5.6/10612/).
 
-The IEEE P1451.5.6 Standard is the [Sigfox](https://www.sigfox.com/en) branch of the [P1451 Standard][1]. 
+The IEEE P1451.5.6 Standard is the [Sigfox](https://www.sigfox.com/en) branch of the [P1451 Standard][1].
 **Transducer Interface Module** (TIM) and **Network Capable Application Processor** (NCAP) are the main components of the [P1451 family of standards][1], where Transducer Electronic Data Sheets (TEDS) are a set of specifications stored for transducers (e.g., transducer identification, calibration, correction data, and manufacturer-related information), specified in P1451.0. 
 
 ![image info](https://i.imgur.com/qxkqput.jpg)
