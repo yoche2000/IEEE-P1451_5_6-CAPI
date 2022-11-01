@@ -56,4 +56,4 @@ Fig.3 - P1451.5.6 TEDS and CAPI Working Flow
 [1]: https://en.wikipedia.org/wiki/IEEE_1451
 [2]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/NCAP
 [3]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/Example%20TEDS
-[4]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WRIM
+[4]: https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/tree/main/WTIM
