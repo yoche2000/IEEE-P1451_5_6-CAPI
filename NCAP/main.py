@@ -26,7 +26,3 @@ if __name__ == '__main__':
     ncap.verify(id="417E4C", path="sigfox_phy_teds.csv")
     ncap.verify(id="417E4A", path="sigfox_phy_teds.csv")
     ncap.verify(id="4195E7", path="sigfox_phy_teds.csv")
-
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
