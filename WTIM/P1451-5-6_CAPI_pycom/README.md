@@ -6,20 +6,22 @@ P.S. This API is written in micropython, the Pycom version of python. For the us
 
 ## CAPI Example
 
-1. Generate a P1451 object. The object will be generated using the data in the 2 TEDS files stored in the WTIM.
+1. Generate a P1451 object. The WTIM object will be generated using the data in the 2 TEDS files stored in the WTIM.
 ```
-  my1451 = P1451()
+  from p1451 import WTIM
+
+  my1451 = WTIM()
 ```
-2. Use following methods to print the teds of an P1451 opject.
+2. Use following methods to print the teds of an WTIM object.
 ```
   >>> my1451.get_phy_teds()     #physical TEDS
   >>> my1451.get_sen_teds()     #sensor TEDS
 ```
-3. P1451 objects can be printed, transforming the data structure into a string. Attributes of the object will be printed.
+3. P1451 objects can be printed, transforming the data structure into strings. Attributes of the object will be printed.
 ```
   >>> print(my1451)
 ```
-4. Using the connect() method of the class P1451 will connect the Pycom board to Sigfox Cloud in a plug-and-play fashion. The data in to Pysical TEDS has to be valid to successfully connect the pycom Board to the server.
+4. Using the connect() method of the class P1451 will connect the Pycom board to Sigfox Cloud in a plug-and-play fashion. The data in to Physical TEDS has to be valid to successfully connect the pycom Board to the server.
 ```
   my1451.connect()
 ```
