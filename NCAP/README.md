@@ -1,11 +1,17 @@
 # CAPI and NCAP
 ## Introduction
-In the IEEE P1451.5.6 standard, NCAP is the [Sigfox Cloud](https://backend.sigfox.com/), the centralized network server opperated by Sigfox. 
-Since NCAP is unified for the IEEE P1451.5.6 standard, this CAPI can be used to work with any WTIM.
+In the IEEE P1451.5.6 standard, NCAP is the [Sigfox Cloud](https://backend.sigfox.com/), the centralized network server operated by Sigfox. 
+Since NCAP is unified for the IEEE P1451.5.6 standard, this CAPI is capable of universal use. 
 
-## Dependency
-Since the CAPI has to retrieve the information about WTIMS, the CAPI will be utilizing the Sigfox API.
-Therefore, a user/password pair is required to successfully use the CAPI.
+![Sigfox Structure](https://i.imgur.com/5I1UNPt.jpg)
+
+## Sigfox Cloud/Backend
+Since the CAPI has to retrieve the information about WTIMS, the CAPI will be utilizing the Sigfox API. 
+Therefore, a user/password pair is required to successfully use the CAPI, which is able to be attained from [Sigfox Backend](https://backend.sigfox.com/auth/login). Go to ***Group*** -> ***Select a group*** -> ***API ACCESS***, as shown in the image below:
+
+![get_usr_pwd](https://i.imgur.com/LZUHMIt.jpg)
+
+Reference: [Sigfox Documentation](https://support.sigfox.com/docs/api-documentation)
 
 ## CPI Structure
 1. NCAP is the main class of this API. Import the class [NCAP](https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/blob/0478db50ed85e9f11e0e8988b53eef2fe9099732/NCAP/p1451.py#L4) from [p1451.py](https://github.com/yoche2000/IEEE-P1451_5_6-CAPI/blob/main/NCAP/p1451.py)
